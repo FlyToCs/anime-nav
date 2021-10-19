@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Vazir-Medium;
+  src: url(fonts/Vazir-Medium.eot) format("eot"),
+    url(fonts/Vazir-Medium.woff) format("woff"),
+    url(fonts/Vazir-Medium.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vazir-Medium;
+}
+body {
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+}
+li,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(166, 15, 15, 1) 50%,
+    rgba(87, 51, 0, 1) 100%
+  );
+}
+.nav a {
+  color: white;
+  z-index: 101;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  display: inline;
+  padding: 15px;
+  z-index: 101;
+  
+}
+
+.nav {
+  margin: auto;
+  position: relative;
+  display: flex;
+  border-radius: 5px;
+  background-color: rgb(44, 39, 59);
+  width: 600px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.bg-navlist {
+  position: absolute;
+  top: 0px;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  transition: all .5s ease;
+}
+
+nav a:nth-child(1){
+  width: 55px;
+}
+nav a:nth-child(2){
+  width: 55px;
+}
+nav a:nth-child(3){
+  width: 55px;
+}
+nav a:nth-child(4){
+  width: 55px;
+}
+nav a:nth-child(5){
+  width: 55px;
+}
+
+.start ,nav a:nth-child(1):hover ~ .bg-navlist{
+  width: 55px;
+  right: 105px;
+  background-color: rgb(230, 0, 230); 
+}
+nav a:nth-child(2):hover ~ .bg-navlist{
+  width: 55px;
+  right: 177px;
+  background-color: rgb(5, 162, 173); 
+}
+nav a:nth-child(3):hover ~ .bg-navlist{
+  width: 55px;
+  right: 250px;
+  background-color: rgb(240, 35, 35); 
+}
+nav a:nth-child(4):hover ~ .bg-navlist{
+  width: 70px;
+  right: 315px;
+  background-color: rgb(61, 87, 236); 
+}
+nav a:nth-child(5):hover ~ .bg-navlist{
+  width: 90px;
+  right: 400px;
+  background-color: rgb(51, 155, 65); 
+}
